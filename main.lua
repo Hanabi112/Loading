@@ -24,7 +24,7 @@ end;
 function RUN_FUNCTION(name, extension, configOpt)
     local settings = configOpt;
     local PATH_URL = settings.URL or nil;
-    local GAME_NAME = game.PlaceId
+    local GAME_NAME = "";
     
     local success = pcall(function()
         game:HttpGet(PATH_URL)
