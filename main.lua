@@ -138,7 +138,7 @@ function RUN_FUNCTION(name, extension, configOpt)
         Message.SizeConstraint = Enum.SizeConstraint.RelativeXX
         Message.ZIndex = 4
         Message.Font = Enum.Font.SourceSansItalic
-        Message.Text = settings.StartMessage or "Welcome, " .. game:GetService("Players").LocalPlayer.Name
+        Message.Text = settings.StartMessage or "Welcome, " .. game:GetService("Players").LocalPlayer.DisplayName
         Message.TextColor3 = Color3.fromRGB(197, 197, 197)
         Message.TextSize = 22.000
         Message.TextTransparency = 1
