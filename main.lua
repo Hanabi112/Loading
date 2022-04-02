@@ -70,8 +70,8 @@ function RUN_FUNCTION(name, extension, configOpt)
         Loader.Name = "Loader"
         Loader.Parent = BlueXLoader
         Loader.AnchorPoint = Vector2.new(0.5, 0.5)
-        Loader.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-        Loader.BorderColor3 = Color3.fromRGB(255, 0, 0)
+        Loader.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        Loader.BorderColor3 = Color3.fromRGB(255, 255, 255)
         Loader.BorderSizePixel = 2
         Loader.Position = UDim2.new(0.5, 0, 0.5, 0)
         Loader.Size = UDim2.new(0, 0,  0, 0)
@@ -92,14 +92,14 @@ function RUN_FUNCTION(name, extension, configOpt)
         Title.Name = "Title"
         Title.Parent = Menu
         Title.AnchorPoint = Vector2.new(0.5, 0)
-        Title.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+        Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
         Title.BackgroundTransparency = 1.000
         Title.BorderSizePixel = 0
         Title.Position = UDim2.new(0.5, 0, 0, 4)
         Title.Size = UDim2.new(1, -6, -0.262604743, 55)
         Title.ZIndex = 4
         Title.Font = Enum.Font.SourceSansBold
-        Title.Text = name or "Ability Hub | Loading"
+        Title.Text = name or "Ability Hub | Loading..."
         Title.TextColor3 = Color3.fromRGB(197, 197, 197)
         Title.TextSize = 22.000
         Title.TextTransparency = 1
@@ -118,7 +118,7 @@ function RUN_FUNCTION(name, extension, configOpt)
 
         Bar.Name = "Bar"
         Bar.Parent = LoadBar
-        Bar.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+        Bar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
         Bar.BorderSizePixel = 0
         Bar.Size = UDim2.new(0, 0, 1, 0)
         Bar.ZIndex = 4
@@ -217,7 +217,7 @@ function RUN_FUNCTION(name, extension, configOpt)
             TIME = .4
         })
     
-        Message.Text = "Loading Successfully!"
+        Message.Text = "Loaded!"
         wait(.5)
         createTween(Message,{TextTransparency = 1}, {
             Style = Enum.EasingStyle.Linear,
