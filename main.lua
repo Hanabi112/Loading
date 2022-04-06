@@ -198,13 +198,13 @@ function RUN_FUNCTION(name, extension, configOpt)
             wait(.4)
         end
         setSize(60)
+        Message.Text = "Game Found!"
+	wait(1)
 	if not game:GetService("UserInputService").TouchEnabled and not game:GetService("UserInputService").KeyboardEnabled == false then
 		Message.Text = "PC"
 	else
 		Message.Text = "Mobile"
 	end
-	wait(1)
-        Message.Text = "Game Found!"
         wait(1)
         setSize(80)
         Message.Text = GAME_NAME
